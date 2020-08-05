@@ -1,220 +1,72 @@
- <!DOCTYPE html>
+ <!DOCTYPE HTML>
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width-device-width" inital-scale=1>
-<title> module2 assisgnment</title>
-<link rel="stylesheet" type="text/css" href="style.css ">
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale-1">
+<title> FOOD,LLC </title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/styles.css">
 <style>
-*{
-  box-sizing:border-box;
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
 }
 
-h1{
-text-align: center;
-font-family:cursive;
-text-decoration-color: big
+/** HEADER **/
+#header-nav {
+  background-color: #f6b319;
+  border-radius: 0;
+  border: 0;
 }
-#h11,#h12,#h13{
-	position:relative;
-	padding:5px;
-  	float:right;
-   	font-family:cursive;
-	font-size:140%;
-  	 border:2px solid black;
-	text-align: center;
-	margin:0%;
-  }
-  #h11{
-    background-color: blue;
-  }
-  #h12{
-    background-color: yellow;
-  }
-  #h13{
-    background-color: green;
-  }
-
-p{
-	background-color:pink;
-	padding:50px,15px,15px,15px;
-	font-family:arial;
-
-	}
-.row{
-   
-		width:100%;
-
-	}
-	@media (min-width: 992px){
-	.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, 
-	.col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-    float: left;
-    border: 2px solid black;
-    margin:1%;
-    
-  }
-
-  .col-lg-1 {
-    width: 8.33%;
-  }
-  .col-lg-2 {
-    width: 16.66%;
-  }
-  .col-lg-3 {
-    width: 25%;
-  }
-  .col-lg-4 {
-    width: 31.33%;
-  }
-  .col-lg-5 {
-    width: 41.66%;
-  }
-  .col-lg-6 {
-    width: 50%;
-  }
-  .col-lg-7 {
-    width: 58.33%;
-  }
-  .col-lg-8 {
-    width: 66.66%;
-  }
-  .col-lg-9 {
-    width: 74.99%;
-  }
-  .col-lg-10 {
-    width: 83.33%;
-  }
-  .col-lg-11 {
-    width: 91.66%;
-  }
-  .col-lg-12 {
-    width: 100%;
-  }
+.navbar-brand {
+  padding-top: 25px;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, 
-  .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-    float: left;
-    border: 2px solid black;
-    margin: 1%;
-    
-  }
-  .col-md-1 {
-    width: 8.33%;
-  }
-  .col-md-2 {
-    width: 16.66%;
-  }
-  .col-md-3 {
-    width: 25%;
-  }
-  .col-md-4 {
-    width: 33.33%;
-  }
-  .col-md-5 {
-    width: 41.66%;
-  }
-  .col-md-6 {
-    width: 48%;
-  }
-  .col-md-7 {
-    width: 58.33%;
-  }
-  .col-md-8 {
-    width: 66.66%;
-  }
-  .col-md-9 {
-    width: 74.99%;
-  }
-  .col-md-10 {
-    width: 83.33%;
-  }
-  .col-md-11 {
-    width: 91.66%;
-  }
-  .col-md-12 {
-    width: 98%;
-  }
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #557c3e;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
 }
-
-@media (max-width: 767px) {
-  .col-xm-1, .col-xm-2, .col-xm-3, .col-xm-4, .col-xm-5, .col-xm-6, 
-  .col-xm-7, .col-xm-8, .col-xm-9, .col-xm-10, .col-xm-11, .col-xm-12 {
-    float: left;
-    border: 2px solid black;
-    margin: 1%;
-  }
-  .col-xm-1 {
-    width: 8.33%;
-  }
-  .col-xm-2 {
-    width: 16.66%;
-  }
-  .col-xm-3 {
-    width: 25%;
-  }
-  .col-xm-4 {
-    width: 33.33%;
-  }
-  .col-xm-5 {
-    width: 41.66%;
-  }
-  .col-xm-6 {
-    width: 50%;
-  }
-  .col-xm-7 {
-    width: 58.33%;
-  }
-  .col-xm-8 {
-    width: 66.66%;
-  }
-  .col-xm-9 {
-    width: 74.99%;
-  }
-  .col-xm-10 {
-    width: 83.33%;
-  }
-  .col-xm-11 {
-    width: 91.66%;
-  }
-  .col-xm-12 {
-    width: 98%;
-  }
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
 }
-
-  }
 
 </style>
 </head>
 <body>
-  <h1>OUR ITEM </h1>
-  <div class="row">
-    <div class="col-lg-4 col-md-6 col-xm-12">
-      <h2 id="h11">Food<h2>
-        <p class="food">Chicken is the most common type of poultry in the world.
-              Owing to the relative ease and low cost of raising them in comparison
-              to animals such as cattle or hogs, chickens have become prevalent
-              throughout the cuisine of cultures around the world, and their meat
-              has been  variously adapted to regional tastes.</p>
-      </div>
-      <div class="col-lg-4 col-md-6 col-xm-12">
-        <h2 id="h12">Sport<h2>
-          <p class="food">Chicken is the most common type of poultry in the world.
-                Owing to the relative ease and low cost of raising them in comparison
-                to animals such as cattle or hogs, chickens have become prevalent
-                throughout the cuisine of cultures around the world, and their meat
-                has been  variously adapted to regional tastes.</p>
-        </div>
-        <div class="col-lg-4 col-md-12 col-xm-12">
-          <h2 id="h13">Fitness<h2>
-            <p class="food">Chicken is the most common type of poultry in the world.
-                  Owing to the relative ease and low cost of raising them in comparison
-                  to animals such as cattle or hogs, chickens have become prevalent
-                  throughout the cuisine of cultures around the world, and their meat
-                  has been  variously adapted to regional tastes.</p>
-        </div>
-        </div>
-        </body>
-        </html>
+<header>
+  <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <a href="index.html" class="pull-left visible-md visible-lg"></a>
+
+          <div class="navbar-brand">
+            <a href="index.html"><h1>Food,LLC</h1></a>
+          </div>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+
+
+     </div>
+   </div>
+ </nav>
+</header>
+<!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
